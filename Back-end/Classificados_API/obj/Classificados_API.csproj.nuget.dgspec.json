@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj": {}
+    "C:\\Users\\48423428893.INFOSCS\\Desktop\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj": {
+    "C:\\Users\\48423428893.INFOSCS\\Desktop\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
+        "projectUniqueName": "C:\\Users\\48423428893.INFOSCS\\Desktop\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
         "projectName": "Classificados_API",
-        "projectPath": "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
-        "packagesPath": "C:\\Users\\47460654892.INFOSCS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\obj\\",
+        "projectPath": "C:\\Users\\48423428893.INFOSCS\\Desktop\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
+        "packagesPath": "C:\\Users\\48423428893.INFOSCS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48423428893.INFOSCS\\Desktop\\RepoClassificados\\Back-end\\Classificados_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\47460654892.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\48423428893.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,7 +50,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[1.1.6, )"
+              "version": "[5.0.14, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -81,6 +81,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.13, 5.0.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -89,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

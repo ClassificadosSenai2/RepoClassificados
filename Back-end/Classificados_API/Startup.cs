@@ -1,3 +1,6 @@
+using Classificados_API.Controllers;
+using Classificados_API.Interfaces;
+using Classificados_API.Repositores;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -37,10 +40,10 @@ namespace Classificados_API
             });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Patrimonio.webAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Classificados_API", Version = "v1" });
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
+                //c.IncludeXmlComments(xmlPath);
             });
             services
                 .AddAuthentication(options =>
@@ -55,14 +58,18 @@ namespace Classificados_API
                         ValidateIssuer = true,
                         ValidateAudience = true,
                         ValidateLifetime = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("-chave-autenticacao")),
+                        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("Classificados-chave-autenticacao")),
                         ClockSkew = TimeSpan.FromMinutes(30),
-                        ValidIssuer = "patrimonio.webAPI",
-                        ValidAudience = "patrimonio.webAPI"
+                        ValidIssuer = "Classificados.webAPI",
+                        ValidAudience = "Classificados.webAPI"
                     };
                 });
-                
-                        
+
+            services.AddTransient<ITipoClassificados, TipoClassificadosRepository>();
+            services.AddTransient<INicho, NichoRepository>();
+            services.AddTransient<ICategorias, CategoriasRepository>();
+
+
         }
 
         
@@ -76,7 +83,7 @@ namespace Classificados_API
             app.UseSwagger();
 
             app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Patrimonio.webAPI");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Classificados_API");
                 c.RoutePrefix = string.Empty;
             });
 
@@ -84,12 +91,7 @@ namespace Classificados_API
 
             app.UseCors("CorsPolicy");
 
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(
-                        Path.Combine(Directory.GetCurrentDirectory(), "StaticFiles")),
-                RequestPath = "/StaticFiles"
-            });
+            
 
             app.UseAuthentication();
 
