@@ -1,18 +1,19 @@
 ﻿using Classificados_API.Contexts;
 using Classificados_API.Domains;
 using Classificados_API.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Classificados_API.Repositores
 {
-    public class CategoriasRepository : ICategorias
+    public class SituacaoRepository : ISituacao
     {
         AakshnContext ctx = new AakshnContext();
-
-        public List<Categoria> ListarTodos()
+        public List<Situacao> ListarTodos()
         {
-            return ctx.Categorias.ToList();
+            return ctx.Situacaos.ToList();
         }
     }
 }

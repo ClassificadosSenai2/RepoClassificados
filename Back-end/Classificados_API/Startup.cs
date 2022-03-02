@@ -68,6 +68,9 @@ namespace Classificados_API
             services.AddTransient<ITipoClassificados, TipoClassificadosRepository>();
             services.AddTransient<INicho, NichoRepository>();
             services.AddTransient<ICategorias, CategoriasRepository>();
+            services.AddTransient<IClassificado, ClassificadoRepository>();
+            services.AddTransient<IUsuario, UsuarioRepository>();
+            services.AddTransient<ISituacao, SituacaoRepository>();
 
 
         }
