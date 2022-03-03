@@ -1,11 +1,14 @@
 import { Component } from 'react';
 import axios from 'axios';
 
+import { parseJwt, usuarioAutenticado } from '../../Services/auth.js';
+
 export default class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
             email: '',
+            telefone: 0,
             senha: '',
             erro: '',
             isloading: false
@@ -30,7 +33,7 @@ export default class Login extends Component {
 
                     console.log(parseJwt());
 
-                    if (parseJwt().role == '1') {
+                    if (parseJwt().role === '1') {
                         this.props.history.push('/');
                         console.log('Logado com o Token: ' + usuarioAutenticado())
                     }

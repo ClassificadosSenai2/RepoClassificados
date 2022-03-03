@@ -9,6 +9,7 @@ export default class Classificado extends Component {
         super(props);
         this.state = {
             idClassificado: 0,
+            idUsuario: 0,
             titulo: '',
             descricao: '',
             dataInclusao: Date,
@@ -40,7 +41,7 @@ export default class Classificado extends Component {
     cadastrarClassificado = (event) => {
         event.preventDefault();
 
-        axios.get('http://localhost:5000/api/Classificado')
+        // axios.get('http://localhost:5000/api/Classificado')
         
     }
 
