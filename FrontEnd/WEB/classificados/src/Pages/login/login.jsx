@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import axios from 'axios';
-import { link } from 'react-router-dom';
 
 export default class Login extends Component {
     constructor(props) {
@@ -10,11 +9,10 @@ export default class Login extends Component {
             senha: '',
             erro: '',
             isloading: false
-        };
+        }
     };
 
-    efetuarLogin = (event) => {
-        event.preventDefault();
+    efetuarLogin = () => {
 
         this.setState({ erro: '', isloading: true });
 
@@ -55,7 +53,7 @@ export default class Login extends Component {
     render(){
         return (
             <div>
-                
+                Login
             </div>
         )
     }

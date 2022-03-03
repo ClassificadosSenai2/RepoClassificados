@@ -2,6 +2,7 @@
 using Classificados_API.Domains;
 using Classificados_API.Interfaces;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Classificados_API.Repositores
 {

@@ -8,18 +8,15 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import { parseJwt, usuarioAutenticado } from './services/auth';
+// import { parseJwt, usuarioAutenticado } from './services/auth';
 
 import './index.css';
 
-import NotFound from '.Pages/notFound/NotFund.js';
+import NotFound from '.pages/notFound/NotFound.js';
+import Home from '.pages/home/Home.js';
+import Login from '.pages/login/login.jsx';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
 
 const routing = (
   <Router>
@@ -27,9 +24,9 @@ const routing = (
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/Login" component={Login}/>
-        <Route path="/MeusClassificados" component={MeusClassificados}/>
+        {/* <Route path="/MeusClassificados" component={MeusClassificados}/>
         <Route path="/BuscaClassificados"component={ListagemClassificados}/>
-        <Route path="/Classificado" component={Ofertas}/>
+        <Route path="/Classificado" component={Ofertas}/> */}
         <Route path="NotFound" component={NotFound}/>
         <Redirect to="/NotFound"/>
         {/* <Route path="/Destaques" component={Destaques}/> */}
@@ -37,3 +34,5 @@ const routing = (
     </div>
   </Router>
 )
+ReactDOM.render(routing,
+  document.getElementById('root'));
