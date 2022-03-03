@@ -8,13 +8,11 @@ import {
   Switch,
 } from 'react-router-dom';
 
-// import { parseJwt, usuarioAutenticado } from './services/auth';
+import { parseJwt, usuarioAutenticado } from './Services/auth.js';
 
-import './index.css';
-
-import NotFound from '.pages/notFound/NotFound.js';
-import Home from '.pages/home/Home.js';
-import Login from '.pages/login/login.jsx';
+import NotFound from './Pages/notFound/NotFound.js';
+import Home from './Pages/home/Home.js';
+import Login from './Pages/login/login.jsx';
 
 
 
