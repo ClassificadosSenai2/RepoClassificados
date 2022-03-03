@@ -6,7 +6,7 @@ namespace Classificados_API.Interfaces
     public interface IOferta
     {
         List<Oferta> ListarMinhas(int IdClassificado);
-        void Cadastrar(Oferta NovoConsultum);
+        void Cadastrar(Oferta novaOferta);
 
         void Situacao(int IdSituacao, string Status);
     }
