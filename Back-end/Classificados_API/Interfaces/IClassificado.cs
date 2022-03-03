@@ -5,7 +5,7 @@ namespace Classificados_API.Interfaces
 {
     public interface IClassificado
     {
-        void Cadastrar(Classificado NovoConsultum);
+        void Cadastrar(Classificado NovoClassificados);
 
         void Deletar(int Id);
 
@@ -13,10 +13,10 @@ namespace Classificados_API.Interfaces
 
         Classificado BuscaPorId(int Id);
 
-        void Atualizar(int Id, Classificado ConsultumAtualizado);
+        void Atualizar(int Id, Classificado ClassificadosAtualizado);
 
         List<Classificado> ListarMinhas(int IdUsuario);
 
-        void Situacao(int IdSituacao, string Status);
+        void Situacao(int IdClassificados, byte idSituacao);
     }
 }

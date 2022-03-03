@@ -1,4 +1,5 @@
-﻿using Classificados_API.Interfaces;
+﻿using Classificados_API.Domains;
+using Classificados_API.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -45,6 +46,34 @@ namespace Classificados_API.Controllers
                 });
             }
             return Ok(_UsuarioRepository.BuscaPorId(id));
+        }
+
+        [HttpPost]
+        public IActionResult Cadastrar(Usuario NovoUsuario)
+        {
+            try
+            {
+                _UsuarioRepository.Cadastrar(NovoUsuario);
+                return StatusCode(201);
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error);
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Atualizar(int id, Usuario UsuarioAtualizado)
+        {
+            try
+            {
+                _UsuarioRepository.Atualizar(id, UsuarioAtualizado);
+                return StatusCode(204);
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error);
+            }
         }
     }
 }

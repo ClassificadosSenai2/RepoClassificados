@@ -9,9 +9,19 @@ namespace Classificados_API.Repositores
     public class UsuarioRepository : IUsuario
     {
         AakshnContext ctx = new AakshnContext();
-        public void Atualizar(int Id, Usuario ConsultumAtualizado)
+        public void Atualizar(int Id, Usuario UsuarioAtualizado)
         {
-            throw new System.NotImplementedException();
+            Usuario usuarioBuscado = BuscaPorId(Id);
+            if (usuarioBuscado!= null)
+            {
+                usuarioBuscado.Nome = UsuarioAtualizado.Nome;
+                usuarioBuscado.Sobrenome = UsuarioAtualizado.Sobrenome;
+                usuarioBuscado.Ddd = UsuarioAtualizado.Ddd;
+                usuarioBuscado.Telefone = UsuarioAtualizado.Telefone;
+
+                ctx.Usuarios.Update(usuarioBuscado);
+                ctx.SaveChanges();
+            }
         }
 
         public Usuario BuscaPorId(int Id)
@@ -19,9 +29,10 @@ namespace Classificados_API.Repositores
             return ctx.Usuarios.FirstOrDefault(c => c.IdUsuario == Id);
         }
 
-        public void Cadastrar(Usuario NovoConsultum)
+        public void Cadastrar(Usuario NovoUsuario)
         {
-            throw new System.NotImplementedException();
+            ctx.Usuarios.Add(NovoUsuario);
+            ctx.SaveChanges();
         }
 
         public List<Usuario> ListarTodos()

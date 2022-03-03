@@ -1,4 +1,5 @@
-﻿using Classificados_API.Interfaces;
+﻿using Classificados_API.Domains;
+using Classificados_API.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -56,6 +57,45 @@ namespace Classificados_API.Controllers
             }
             _ClassificadoRepository.Deletar(id);
             return StatusCode(204);
+        }
+
+        [HttpPatch("{id}")]
+        public IActionResult MudarSituacao(int id, Classificado NovaSituacao)
+        {
+            try
+            {
+                if(id <= 0)
+                {
+                    return BadRequest(new
+                    {
+                        Mensagem = "Este id não é valido"
+                    });
+                }
+
+                if(NovaSituacao.IdSituacao <= 0)
+                {
+                    return BadRequest(new { Mensagem = "Informe um id valido" });
+                }
+                _ClassificadoRepository.Situacao(id, Convert.ToByte(NovaSituacao.IdSituacao));
+                return Ok();
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error);
+            }
+        }
+        [HttpPost]
+        public IActionResult Cadastrar(Classificado NovoClassificado)
+        {
+            try
+            {
+                _ClassificadoRepository.Cadastrar(NovoClassificado);
+                return StatusCode(201);
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error);
+            }
         }
     }
 }
