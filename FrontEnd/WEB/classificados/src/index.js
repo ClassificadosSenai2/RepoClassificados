@@ -17,9 +17,9 @@ import Login from './Pages/login/login.jsx';
 const PermissaoComum = ({ component: Component }) => (
   <Route
     render={(props) =>
-      usuarioAutenticado() && parseJwt().role === '1' ? (
+      usuarioAutenticado() && parseJwt().role === '2' ? (
         <Component {...props} />) : (
-        <Redirect to="Login" />
+        <Redirect to="Login"/>
       )
     }
   />

@@ -15,7 +15,8 @@ export default class Classificado extends Component {
             dataInclusao: Date,
             dataExpiracao: Date,
             situacao: 0,
-            ofertas: []
+            ofertas: [],
+            descricaoDaOferta: ''
         };
     };
 
@@ -25,7 +26,10 @@ export default class Classificado extends Component {
         axios.get('http://localhost:5000/api/Classificados')
             .then(resposta => {
                 if (resposta.status === 200) {
-                    // Precisa colocar o axios get para pegar os dados de um classificado especifico
+                    this.SetState({ 
+                        idClassificado: response.data
+                    
+                    })
                 }
             })
     }
@@ -35,14 +39,13 @@ export default class Classificado extends Component {
 
         this.setState({ situacao: 2 })
 
-        // Falta colocar o axios de update para atualizar o banco
+        // Falta colocar o axios delete
     }
 
-    cadastrarClassificado = (event) => {
+    cadastrarOferta = (event) => {
         event.preventDefault();
 
-        // axios.get('http://localhost:5000/api/Classificado')
-        
+        // Falta colocar o axios post de oferta
     }
 
     return()

@@ -59,7 +59,8 @@ CREATE TABLE Ofertas(
 idOfertas INT PRIMARY KEY IDENTITY,
 idUsuario INT FOREIGN KEY REFERENCES Usuarios(idUsuario),
 idClassificado INT FOREIGN KEY REFERENCES Classificados(idClassificado),
-idSituacao TINYINT FOREIGN KEY REFERENCES Situacao(idSituacao)
+idSituacao TINYINT FOREIGN KEY REFERENCES Situacao(idSituacao),
+Descricao VARCHAR(70)
 )
 
 CREATE TABLE ImagemBanco (
