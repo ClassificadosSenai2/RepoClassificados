@@ -13,6 +13,7 @@ import { parseJwt, usuarioAutenticado } from './Services/auth.js';
 import NotFound from './Pages/notFound/NotFound.js';
 import Home from './Pages/home/Home.js';
 import Login from './Pages/login/login.jsx';
+import MeusClassificados from './Pages/meusClassificados/meusClassificados.jsx';
 
 const PermissaoComum = ({ component: Component }) => (
   <Route
@@ -42,8 +43,8 @@ const routing = (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/Login" component={Login} />
-        {/* <Route path="/MeusClassificados" component={MeusClassificados}/>
-        <Route path="/BuscaClassificados"component={ListagemClassificados}/>
+        <Route path="/MeusClassificados" component={MeusClassificados}/>
+        {/* <Route path="/BuscaClassificados"component={ListagemClassificados}/>
         <Route path="/Classificado" component={Ofertas}/> */}
         <Route path="NotFound" component={NotFound} />
         <Redirect to="/NotFound" />
