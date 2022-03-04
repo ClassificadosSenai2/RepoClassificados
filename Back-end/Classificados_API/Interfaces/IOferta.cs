@@ -8,6 +8,6 @@ namespace Classificados_API.Interfaces
         List<Oferta> ListarMinhas(int IdClassificado);
         void Cadastrar(Oferta novaOferta);
 
-        void Situacao(int IdSituacao, string Status);
+        void Situacao(int IdOferta, byte idSituacao);
     }
 }

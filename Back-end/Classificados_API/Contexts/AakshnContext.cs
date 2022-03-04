@@ -32,12 +32,7 @@ namespace Classificados_API.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=CYBERNOTE-02\\SQLEXPRESS; initial catalog=Classificados_2; user Id=sa; pwd=Senai@132;");
-                
-                //MAQUINA JOAO
-                //optionsBuilder.UseSqlServer("Data Source=DESKTOP-L3Q203S\\SQLEXPRESS; initial catalog=Classificados_2; user Id=sa; pwd=senai@132;");
-
+                optionsBuilder.UseSqlServer("server=CYBERNOTE-02\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=Senai@132;");
             }
         }
 
@@ -48,9 +43,9 @@ namespace Classificados_API.Contexts
             modelBuilder.Entity<Categoria>(entity =>
             {
                 entity.HasKey(e => e.IdCategoria)
-                    .HasName("PK__Categori__8A3D240CE3147BB0");
+                    .HasName("PK__Categori__8A3D240C07C15BFB");
 
-                entity.HasIndex(e => e.Categoria1, "UQ__Categori__08015F8B87B80F96")
+                entity.HasIndex(e => e.Categoria1, "UQ__Categori__08015F8B2CAE97BC")
                     .IsUnique();
 
                 entity.Property(e => e.IdCategoria).HasColumnName("idCategoria");
@@ -72,7 +67,7 @@ namespace Classificados_API.Contexts
             modelBuilder.Entity<Classificado>(entity =>
             {
                 entity.HasKey(e => e.IdClassificado)
-                    .HasName("PK__Classifi__2170C53B903452D2");
+                    .HasName("PK__Classifi__2170C53B234078C9");
 
                 entity.Property(e => e.IdClassificado).HasColumnName("idClassificado");
 
@@ -81,7 +76,7 @@ namespace Classificados_API.Contexts
                 entity.Property(e => e.DataExpiracao).HasColumnType("datetime");
 
                 entity.Property(e => e.Descricao)
-                    .HasMaxLength(300)
+                    .HasMaxLength(800)
                     .IsUnicode(false);
 
                 entity.Property(e => e.IdSituacao).HasColumnName("idSituacao");
@@ -107,7 +102,7 @@ namespace Classificados_API.Contexts
             modelBuilder.Entity<ImagemBanco>(entity =>
             {
                 entity.HasKey(e => e.IdImg)
-                    .HasName("PK__ImagemBa__3C3EAB5A5C637885");
+                    .HasName("PK__ImagemBa__3C3EAB5A12450563");
 
                 entity.ToTable("ImagemBanco");
 
@@ -144,9 +139,9 @@ namespace Classificados_API.Contexts
             modelBuilder.Entity<Nicho>(entity =>
             {
                 entity.HasKey(e => e.IdNicho)
-                    .HasName("PK__Nichos__98EA600F1BE30CF5");
+                    .HasName("PK__Nichos__98EA600F240D406C");
 
-                entity.HasIndex(e => e.Nicho1, "UQ__Nichos__145CAB4A4043C972")
+                entity.HasIndex(e => e.Nicho1, "UQ__Nichos__145CAB4A13AFFDDF")
                     .IsUnique();
 
                 entity.Property(e => e.IdNicho)
@@ -163,9 +158,13 @@ namespace Classificados_API.Contexts
             modelBuilder.Entity<Oferta>(entity =>
             {
                 entity.HasKey(e => e.IdOfertas)
-                    .HasName("PK__Ofertas__BB0EE9346738682E");
+                    .HasName("PK__Ofertas__BB0EE93441D29F3E");
 
                 entity.Property(e => e.IdOfertas).HasColumnName("idOfertas");
+
+                entity.Property(e => e.Descricao)
+                    .HasMaxLength(70)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.IdClassificado).HasColumnName("idClassificado");
 
@@ -192,11 +191,11 @@ namespace Classificados_API.Contexts
             modelBuilder.Entity<Situacao>(entity =>
             {
                 entity.HasKey(e => e.IdSituacao)
-                    .HasName("PK__Situacao__12AFD197F85609D2");
+                    .HasName("PK__Situacao__12AFD1978093A29B");
 
                 entity.ToTable("Situacao");
 
-                entity.HasIndex(e => e.Situacao1, "UQ__Situacao__AB9315550A797BCC")
+                entity.HasIndex(e => e.Situacao1, "UQ__Situacao__AB93155504461C5C")
                     .IsUnique();
 
                 entity.Property(e => e.IdSituacao)
@@ -213,9 +212,9 @@ namespace Classificados_API.Contexts
             modelBuilder.Entity<TipoClassificado>(entity =>
             {
                 entity.HasKey(e => e.IdTipoClassificados)
-                    .HasName("PK__TipoClas__5AC132FD26EDCE28");
+                    .HasName("PK__TipoClas__5AC132FDF84B400D");
 
-                entity.HasIndex(e => e.Tipo, "UQ__TipoClas__8E762CB42DDE2B83")
+                entity.HasIndex(e => e.Tipo, "UQ__TipoClas__8E762CB4217382CB")
                     .IsUnique();
 
                 entity.Property(e => e.IdTipoClassificados)
@@ -231,9 +230,9 @@ namespace Classificados_API.Contexts
             modelBuilder.Entity<TipoUsuario>(entity =>
             {
                 entity.HasKey(e => e.IdTipoUsuario)
-                    .HasName("PK__TipoUsua__03006BFFA782BE0A");
+                    .HasName("PK__TipoUsua__03006BFF54EF6441");
 
-                entity.HasIndex(e => e.TipoUsuario1, "UQ__TipoUsua__52F7E3AA51415EF0")
+                entity.HasIndex(e => e.TipoUsuario1, "UQ__TipoUsua__52F7E3AA091217E6")
                     .IsUnique();
 
                 entity.Property(e => e.IdTipoUsuario)
@@ -251,12 +250,12 @@ namespace Classificados_API.Contexts
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario)
-                    .HasName("PK__Usuarios__645723A6C6A75291");
+                    .HasName("PK__Usuarios__645723A6C51818F3");
 
-                entity.HasIndex(e => e.Telefone, "UQ__Usuarios__4EC504B6DE7534AE")
+                entity.HasIndex(e => e.Telefone, "UQ__Usuarios__4EC504B69BF27C10")
                     .IsUnique();
 
-                entity.HasIndex(e => e.Email, "UQ__Usuarios__A9D105343E056735")
+                entity.HasIndex(e => e.Email, "UQ__Usuarios__A9D10534DC9484E8")
                     .IsUnique();
 
                 entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");

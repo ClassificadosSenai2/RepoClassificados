@@ -79,7 +79,8 @@ namespace Classificados_API.Repositores
                         {
                             Situacao1 = x.IdSituacaoNavigation.Situacao1
 
-                        }
+                        },
+                        
                     })
                     .ToList();
             }

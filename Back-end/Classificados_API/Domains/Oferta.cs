@@ -11,6 +11,7 @@ namespace Classificados_API.Domains
         public int? IdUsuario { get; set; }
         public int? IdClassificado { get; set; }
         public byte? IdSituacao { get; set; }
+        public string Descricao { get; set; }
 
         public virtual Classificado IdClassificadoNavigation { get; set; }
         public virtual Situacao IdSituacaoNavigation { get; set; }
