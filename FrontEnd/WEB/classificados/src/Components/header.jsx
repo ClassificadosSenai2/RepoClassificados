@@ -21,7 +21,7 @@ export default function Header() {
                     <nav className="linksHeader">
                         <Link to="" className="linkHeader">Categorias</Link>
                         <Link to="" className="linkHeader">Em alta</Link>
-                        <Link to="" className="linkHeader">Perfil</Link>
+                        <Link to="/Perfil" className="linkHeader">Perfil</Link>
                         <Link to="" className="linkHeader">Meus Anúncios</Link>
                     </nav>
 
