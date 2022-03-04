@@ -1,0 +1,58 @@
+header {
+    background-color: #5995FD;
+    width: 100vw;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apoioHeader {
+    width: 922px;
+    height: 91px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logoHeader{
+    width: 20%;
+}
+
+.blocoPesquisaLinks{
+    width: 74.2608%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blocoPesquisa{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: right;
+}
+
+.blocoPesquisa input{
+    width: 83.4722%;
+}
+
+.blocoPesquisa button{
+    width: 16.4278%;
+}
+
+.linksHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.linkHeader{
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: unset;
+    font-size: 24px;
+}

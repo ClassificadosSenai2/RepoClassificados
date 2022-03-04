@@ -48,5 +48,15 @@ export default class Classificado extends Component {
         // Falta colocar o axios post de oferta
     }
 
-    return()
+    atualizaStateCampo = (campo) => {
+        this.SetState({ [campo.target.name]: campo.target.value })
+    }
+
+    render() {
+        return (
+            <div>
+                Classificado Unico
+            </div>
+        )
+    }
 }

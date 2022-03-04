@@ -31,4 +31,6 @@ export default class MeusClassificados extends Component {
     //     axios.post('http://localhost:5000/api/Classificado')
     // }
 
+    // Precisa saber onde os campos de cadastroClassificados ficará
+
 }

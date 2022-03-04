@@ -1,10 +1,15 @@
 import '../../Assets/css/styles.css';
+import Header from "../../Components/header.jsx"
 
 function Home() {
   return (
-    <div>
-      Página Home
-    </div>
+    <main>
+
+      <Header/>
+
+      
+
+    </main>
   );
 }
 
