@@ -54,6 +54,7 @@ DataCricao DATETIME,
 DataExpiracao DATETIME,
 Acessos SMALLINT
 )
+ALTER TABLE Classificados ADD Imagem varchar(255)not null
 
 CREATE TABLE Ofertas(
 idOfertas INT PRIMARY KEY IDENTITY,

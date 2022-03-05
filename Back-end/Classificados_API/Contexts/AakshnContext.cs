@@ -32,7 +32,10 @@ namespace Classificados_API.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server=CYBERNOTE-02\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=Senai@132;");
+                //optionsBuilder.UseSqlServer("server=CYBERNOTE-02\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=Senai@132;");
+
+                //maquina joao
+                optionsBuilder.UseSqlServer("server=DESKTOP-L3Q203S\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=senai@132;");
             }
         }
 
