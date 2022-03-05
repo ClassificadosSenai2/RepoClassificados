@@ -9,14 +9,14 @@ export default function Header() {
     return (
         <header>
             <div className="apoioHeader">
-                <img src={logo} id="logoHeader" />
+                <Link to="/"><img src={logo} id="logoHeader" /></Link>
 
                 <div className="blocoPesquisaLinks">
 
-                    <div className="blocoPesquisa">
-                        <input></input>
-                        <button>Pesquisar</button>
-                    </div>
+                    <form className="blocoPesquisa">
+                        <input type="text" name="pesquisa" placeholder="Pesquise aqui"></input>
+                        <button type="submit">Pesquisar</button>
+                    </form>
 
                     <nav className="linksHeader">
                         <Link to="" className="linkHeader">Categorias</Link>

@@ -5,3 +5,44 @@ section {
     height: 50vw;
     margin-top: 82px;
 }
+
+.apoioPerfil {
+    background-color: black;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apoioImagemPerfil {
+    width: 20%;
+    background-color: #A4C5FD;
+    border: unset;
+}
+
+.apoioImagemPerfil img {
+    width: 100%;
+    height: auto;
+    border-radius: 3vw;
+    border: 1px solid #A4C5FD;
+}
+
+.apoioPerfl-form {
+    width: 70%;
+    height: 90%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linhasInputs {
+    width: 90%;
+}
+
+.linhasInputs input {
+    width: 50%;
+}

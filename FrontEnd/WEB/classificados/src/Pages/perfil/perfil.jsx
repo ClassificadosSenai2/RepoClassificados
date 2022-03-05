@@ -1,6 +1,7 @@
 import '../../Assets/css/styles.css'
 import '../../Assets/css/perfil.css'
 import Header from "../../Components/header.jsx"
+import PerfilGenerico from "../../Assets/img/Perfil_Generico.png"
 
 import { Component } from "react";
 import axios from 'axios';
@@ -32,11 +33,27 @@ export default class Perfil extends Component {
                 <Header />
                 <section>
                     <h1>Perfil - Informações Pessoaiss</h1>
-                    <div>
-                        <img />
-                        <div>
-                            
+                    <div className='apoioPerfil'>
+                        <div className='apoioImagemPerfil'>
+                            <img src={PerfilGenerico} />
                         </div>
+                        <form className='apoioPerfl-form'>
+
+                            <div className='linhasInputs'>
+                                <input name='nome' placeholder='Nome' type="text"></input>
+                                <input name='sobrenome' placeholder='Sobrenome' type="text"></input>
+                            </div>
+
+                            <div className='linhasInputs'>
+                                <input name='email' placeholder='Email' type='email' ></input>
+                            </div>
+
+                            <div className='linhasInputs'>
+                                <input name='ddd' placeholder='DDD' type="number"></input>
+                                <input name='telefone' placeholder='Telefone' type="number"></input>
+                            </div>
+                            <button type='submit'>Atualizar</button>
+                        </form>
                     </div>
                 </section>
             </div>
