@@ -1,15 +1,18 @@
+main {
+    height: 49vw;
+}
+
 section {
     background-color: #A4C5FD;
     margin: auto;
     width: 75%;
-    height: 50vw;
+    height: 60%;
     margin-top: 82px;
+    padding: 2vw;
 }
 
 .apoioPerfil {
-    background-color: black;
-    width: 85%;
-    margin: auto;
+    height: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,7 +20,7 @@ section {
 }
 
 .apoioImagemPerfil {
-    width: 20%;
+    width: 27%;
     background-color: #A4C5FD;
     border: unset;
 }
@@ -25,24 +28,40 @@ section {
 .apoioImagemPerfil img {
     width: 100%;
     height: auto;
-    border-radius: 3vw;
+    border-radius: 10vw;
     border: 1px solid #A4C5FD;
 }
 
-.apoioPerfl-form {
+.apoioForm {
     width: 70%;
     height: 90%;
-    background-color: red;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.apoioForm form {
+    width: 80%;
 }
 
 .linhasInputs {
     width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.1vw;
+    margin-bottom: 1.1vw;
+}
+
+#emailInput {
+    width: 100%;
 }
 
 .linhasInputs input {
-    width: 50%;
+    width: 45%;
+    margin-right: 2vw;
+    height: 2.4vw;
+    border-radius: 0.9vw;
+    padding-left: 8px;
+    font-size: 1.1vw;
 }

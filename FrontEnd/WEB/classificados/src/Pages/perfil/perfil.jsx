@@ -29,34 +29,37 @@ export default class Perfil extends Component {
 
     render() {
         return (
-            <div>
+            <main>
                 <Header />
                 <section>
-                    <h1>Perfil - Informações Pessoaiss</h1>
+                    <h1>Perfil - Informações Pessoais</h1>
                     <div className='apoioPerfil'>
                         <div className='apoioImagemPerfil'>
                             <img src={PerfilGenerico} />
                         </div>
-                        <form className='apoioPerfl-form'>
+                        <div className='apoioForm'>
+                            <form>
 
-                            <div className='linhasInputs'>
-                                <input name='nome' placeholder='Nome' type="text"></input>
-                                <input name='sobrenome' placeholder='Sobrenome' type="text"></input>
-                            </div>
+                                <div className='linhasInputs'>
+                                    <input name='nome' placeholder='Nome' type="text"></input>
+                                    <input name='sobrenome' placeholder='Sobrenome' type="text"></input>
+                                </div>
 
-                            <div className='linhasInputs'>
-                                <input name='email' placeholder='Email' type='email' ></input>
-                            </div>
+                                <div className='linhasInputs'>
+                                    <input name='email' placeholder='Email' type='email' id='emailInput' ></input>
+                                </div>
 
-                            <div className='linhasInputs'>
-                                <input name='ddd' placeholder='DDD' type="number"></input>
-                                <input name='telefone' placeholder='Telefone' type="number"></input>
-                            </div>
-                            <button type='submit'>Atualizar</button>
-                        </form>
+                                <div className='linhasInputs'>
+                                    <input name='ddd' placeholder='DDD' type="number"></input>
+                                    <input name='telefone' placeholder='Telefone' type="number"></input>
+                                </div>
+
+                                <button type='submit'>Atualizar</button>
+                            </form>
+                        </div>
                     </div>
                 </section>
-            </div>
+            </main>
 
         )
     }
