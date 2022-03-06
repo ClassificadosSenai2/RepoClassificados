@@ -23,12 +23,12 @@ export default class Classificado extends Component {
     buscarClassificado = (event) => {
         event.preventDefault();
 
-        axios.get('http://localhost:5000/api/Classificados')
+        axios.get('http://localhost:5000/api/Classificados/ListarMinhas')
             .then(resposta => {
                 if (resposta.status === 200) {
-                    this.SetState({ 
+                    this.SetState({
                         idClassificado: response.data
-                    
+
                     })
                 }
             })
@@ -39,7 +39,7 @@ export default class Classificado extends Component {
 
         this.setState({ situacao: 2 })
 
-        // Falta colocar o axios delete
+        axios.delete
     }
 
     cadastrarOferta = (event) => {

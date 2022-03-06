@@ -7,8 +7,6 @@ function Home() {
 
       <Header/>
 
-      
-
     </main>
   );
 }
