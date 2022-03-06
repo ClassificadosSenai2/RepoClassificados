@@ -1,6 +1,11 @@
+import Header from "../../Components/header";
+
 function NotFound() {
     return (
-        <div>Não foi possível encontrar um destino!</div>
+        <div>
+            <Header />
+            <div>Não foi possível encontrar um destino!</div>
+        </div>
     );
 }
 
