@@ -21,6 +21,7 @@ namespace Classificados_API.Domains
         public DateTime? DataCricao { get; set; }
         public DateTime? DataExpiracao { get; set; }
         public short? Acessos { get; set; }
+        public string Imagem { get; set; }
 
         public virtual Situacao IdSituacaoNavigation { get; set; }
         public virtual Usuario IdUsuarioNavigation { get; set; }
