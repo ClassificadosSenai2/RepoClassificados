@@ -106,7 +106,7 @@ namespace Classificados_API.Controllers
                     return BadRequest("Extensão de arquivo não permitida");
                 }
 
-                NovoClassificado.Imagem = uploadResultado;
+                //NovoClassificado.Imagem = uploadResultado;
 
                 NovoClassificado.DataCricao = DateTime.Now;
 

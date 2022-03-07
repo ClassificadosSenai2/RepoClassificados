@@ -2,7 +2,7 @@ main {
     height: 49vw;
 }
 
-section {
+.section-perfil {
     background-color: #A4C5FD;
     margin: auto;
     width: 75%;

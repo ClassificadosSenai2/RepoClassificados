@@ -23,6 +23,7 @@ export default function Header() {
                         <Link to="" className="linkHeader">Em alta</Link>
                         <Link to="/Perfil" className="linkHeader">Perfil</Link>
                         <Link to="" className="linkHeader">Meus Anúncios</Link>
+                        <Link to="/Classificado" className="linkHeader">Classificado</Link>
                     </nav>
 
                 </div>

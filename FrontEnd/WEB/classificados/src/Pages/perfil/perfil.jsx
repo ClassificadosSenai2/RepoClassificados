@@ -67,7 +67,7 @@ export default class Perfil extends Component {
         return (
             <main>
                 <Header />
-                <section>
+                <section className='section-perfil'>
                     <h1>Perfil - Informações pessoais</h1>
                     <div className='apoioPerfil'>
                         <div className='apoioImagemPerfil'>

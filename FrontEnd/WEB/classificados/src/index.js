@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {
@@ -14,6 +14,7 @@ import NotFound from './Pages/notFound/NotFound.js';
 import Home from './Pages/home/Home.js';
 import Login from './Pages/login/login.jsx';
 import Perfil from './Pages/perfil/perfil.jsx';
+import Classificado from './Pages/classificadoUnico/classificado.jsx';
 
 const PermissaoComum = ({ component: Component }) => (
   <Route
@@ -43,9 +44,7 @@ const routing = (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/Login" component={Login} />
-        {/* <Route path="/MeusClassificados" component={MeusClassificados}/>
-        <Route path="/BuscaClassificados"component={ListagemClassificados}/>
-        <Route path="/Classificado" component={Ofertas}/> */}
+        <Route path="/Classificado"component={Classificado}/>
         <Route path="/Perfil" component={Perfil}/>
         <Route path="NotFound" component={NotFound} />
         <Redirect to="/NotFound" />
