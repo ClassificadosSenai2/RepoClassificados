@@ -108,7 +108,7 @@ namespace Classificados_API.Controllers
 
                 NovoClassificado.Imagem = uploadResultado;
 
-                NovoClassificado.DataCricao = DateTime.Now;
+                NovoClassificado.DataCricao = DateTime.Now;                                                 
 
                 _ClassificadoRepository.Cadastrar(NovoClassificado);
                 return StatusCode(201);
