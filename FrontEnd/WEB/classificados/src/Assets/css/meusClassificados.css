@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+h4 {
+    font-size: 3.375rem;
+}
+
+h5 {
+    font-size: 2.25rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloSecao {
+    background-color: #5995FD;
+    padding: 16px;
+    flex-flow: row wrap ;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 970px;
+    height: 64px;
+    justify-self: center;
+    margin-bottom: 56px;
+    margin-top: 96px;
+}
+
+.btnAnunciar {
+    background-color: transparent;
+    border-color: white;
+    /* align-items: center;
+    justify-content: center; */
+    font-family: Roboto, sans-serif;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    border-style: solid;
+    width: 235px;
+    height: 36px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    /* justify-content: start; */
+}
+
+.btnAnunciar:hover {
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 3px 10px 0 rgb(255, 255, 255);
+}
+
+.btnAnunciar:active {
+    box-shadow: 0 0px 0px 0 rgb(255, 255, 255), 0 0px 0px 0 rgb(255, 255, 255);
+}
+
+.classificadoUnico {
+    background-color: #A4C5FD;
+    padding: 16px;
+    display: flex;
+    width: 970px;
+    height: 224px;
+    border-radius: 16px;
+    justify-content: space-around;
+}
+    
+.imgClassif {
+    /*visibility: hidden; */
+    height: 208px;
+    width: 208px;
+    border-style: dashed;
+    background-color: white;
+}
+
+.infoClassif {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 16px;
+    width: 650px;
+    height: 192px;
+}
+    
+.infoClassifTeD {
+    border: 1px;
+    border-style: solid;
+    width: 650px;
+    height: 144px;
+}
+    
+.tituloClassif {
+    border-style: solid;
+    border: 2px;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+    
+.linhaClassif {
+    height: 1px;
+    background: black;
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+    
+.descClassif p {
+    padding: 16px;
+    background-color: transparent;
+    width: 610px;
+    height: 80px;
+}
+
+.oferta___tempo {
+    display: flex;
+    margin-top: 16px;
+}
+
+.ofertaFavorita {
+    margin-left: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tempoClass {
+    margin-left: 1rem;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
