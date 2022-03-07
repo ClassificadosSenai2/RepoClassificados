@@ -36,12 +36,15 @@ namespace Classificados_API.Contexts
                 //optionsBuilder.UseSqlServer("server=CYBERNOTE-02\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=Senai@132;");
 
                 //maquina joao
-                optionsBuilder.UseSqlServer("server=DESKTOP-L3Q203S\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=senai@132;");
+                //optionsBuilder.UseSqlServer("server=DESKTOP-L3Q203S\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=senai@132;");
 
                 //Maquina Vitor
                 //optionsBuilder.UseSqlServer("server=DESKTOP-RR2ANFV\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=Senai@132;");
 
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("server=NOTE0113G2\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=Senai@132;");
+
+
+                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 //optionsBuilder.UseSqlServer("server=DESKTOP-L3Q203S\\SQLEXPRESS; database=Classificados_2; user Id=sa; pwd=senai@132;");
 
             }

@@ -9340,19 +9340,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\47460654892.INFOSCS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\SENAI\\3°semestre- SENAI\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
+      "projectUniqueName": "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
       "projectName": "Classificados_API",
-      "projectPath": "C:\\Users\\user\\Documents\\SENAI\\3°semestre- SENAI\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\SENAI\\3°semestre- SENAI\\RepoClassificados\\Back-end\\Classificados_API\\obj\\",
+      "projectPath": "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
+      "packagesPath": "C:\\Users\\47460654892.INFOSCS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\47460654892.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9439,16 +9439,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\user\\Documents\\SENAI\\3°semestre- SENAI\\RepoClassificados\\Back-end\\Classificados_API\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
