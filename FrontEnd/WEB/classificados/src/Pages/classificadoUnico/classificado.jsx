@@ -28,7 +28,7 @@ export default class Classificado extends Component {
 
     buscarClassificado = () => {
 
-        axios.get('https://6224b3d36c0e3966204497ad.mockapi.io/Classificados/' + this.state.idClassificado + '/Ofertas/')
+        axios.get('https://localhost:5000/Classificados/' + this.state.idClassificado + '/Ofertas/')
             .then(resposta => {
                 if (resposta.status === 200) {
 
@@ -69,28 +69,43 @@ export default class Classificado extends Component {
                     </div>
                 </section>
 
-                <section className="apoioClassificado">
+                <section className="apoioClassificado1">
                     <div className="apoioOfertas">
-                        <h1>Ofertas feitas pelos usuarios</h1>
-                        <div>
-                            <h2>Oferta favorita</h2>
-                            <div className="blocoOferta">
-                                <h3>NomeUsuario</h3>
-                                <span>300 Centavos</span>
-                            </div>
+                        <div className="tituloOfertas">
+                            <h1>Ofertas feitas pelos usuarios</h1>
                         </div>
-
                         <div>
-                            <h2>Todas as Ofertas</h2>
-                            <div className="blocoOferta">
-                                <h3>Nome Ofertante</h3>
-                                <span>DescricaoDaOferta</span>
+                            <div className="avisoOferta">
+                                <h2>Oferta favorita</h2>
                             </div>
-
+                            <div className="blocoOferta">
+                                <div className="nomeUsuario">
+                                    <h3>NomeUsuario</h3>
+                                </div>
+                                <div className="ofertaUsuario">
+                                    <span>300 Centavos</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </section>
+
+                    <div className="divTodasOfertas">
+                        <div className="todasOfertas">
+                            <h2>Todas as Ofertas</h2>
+                        </div>
+                        <div className="blocoOferta">
+                            <div className="nomeUsuario">
+                                <h3>Nome Ofertante</h3>
+                            </div>
+                            <div className="ofertaUsuario">
+                                <span>DescricaoDaOferta</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section >
             </div>
+
         )
     }
 }

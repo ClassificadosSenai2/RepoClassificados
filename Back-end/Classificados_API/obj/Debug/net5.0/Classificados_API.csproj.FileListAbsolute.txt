@@ -536,7 +536,6 @@ C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Clas
 C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\obj\Debug\net5.0\Classificados_API.csproj.CopyComplete
 C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\obj\Debug\net5.0\Classificados_API.genruntimeconfig.cache
 >>>>>>> cbb2e18b47f6f1144c433f1f1fa08dec9ca9e103
-<<<<<<< HEAD
 C:\Users\Win10\Desktop\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Win10\Desktop\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Win10\Desktop\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
@@ -548,8 +547,15 @@ C:\Users\Win10\Desktop\RepoClassificados\Back-end\Classificados_API\bin\Debug\ne
 C:\Users\Win10\Desktop\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
 C:\Users\Win10\Desktop\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Win10\Desktop\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-=======
 C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 >>>>>>> 52add0628feaeaa643943780d74e05c834186725
+C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\user\Documents\SENAI\3°semestre- SENAI\RepoClassificados\Back-end\Classificados_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

@@ -953,7 +953,6 @@
           }
         }
       },
-<<<<<<< HEAD
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -1003,8 +1002,6 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-=======
->>>>>>> 52add0628feaeaa643943780d74e05c834186725
       "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
@@ -1026,7 +1023,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-<<<<<<< HEAD
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -1054,8 +1050,6 @@
           }
         }
       },
-=======
->>>>>>> 52add0628feaeaa643943780d74e05c834186725
       "runtime.native.System/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4523,7 +4517,6 @@
         "version.txt"
       ]
     },
-<<<<<<< HEAD
     "NETStandard.Library/1.6.1": {
       "sha512": "WcSp3+vP+yHNgS8EV5J7pZ9IRpeDuARBPN28by8zqff1wJQXm26PVU8L3/fYLBJVU7BtDyqNVWq2KlCVvSSR4A==",
       "type": "package",
@@ -4540,11 +4533,6 @@
     "Newtonsoft.Json/12.0.2": {
       "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "type": "package",
-=======
-    "Newtonsoft.Json/12.0.2": {
-      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
-      "type": "package",
->>>>>>> 52add0628feaeaa643943780d74e05c834186725
       "path": "newtonsoft.json/12.0.2",
       "files": [
         ".nupkg.metadata",
@@ -4593,7 +4581,6 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-<<<<<<< HEAD
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "sha512": "HdSSp5MnJSsg08KMfZThpuLPJpPwE5hBXvHwoKWosyHHfe8Mh5WKT0ylEOf6yNzX6Ngjxe4Whkafh5q7Ymac4Q==",
       "type": "package",
@@ -4636,8 +4623,6 @@
         "runtimes/fedora.24-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-=======
->>>>>>> 52add0628feaeaa643943780d74e05c834186725
     "runtime.native.System/4.3.0": {
       "sha512": "c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
       "type": "package",
@@ -9457,5 +9442,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\user\\Documents\\SENAI\\3°semestre- SENAI\\RepoClassificados\\Back-end\\Classificados_API\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
