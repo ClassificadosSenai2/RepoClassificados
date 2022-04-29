@@ -9340,11 +9340,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\48423428893.INFOSCS\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\47460654892.INFOSCS\\.nuget\\packages\\": {}
+>>>>>>> a081d175f47fae44be01bd553f73bb3b7ea9c4a9
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\48423428893.INFOSCS\\Desktop\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
       "projectName": "Classificados_API",
       "projectPath": "C:\\Users\\48423428893.INFOSCS\\Desktop\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
@@ -9353,6 +9358,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\48423428893.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
+      "projectName": "Classificados_API",
+      "projectPath": "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\Classificados_API.csproj",
+      "packagesPath": "C:\\Users\\47460654892.INFOSCS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\47460654892.INFOSCS\\Documents\\Projetos\\Projeto Interno\\RepoClassificados\\Back-end\\Classificados_API\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\47460654892.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> a081d175f47fae44be01bd553f73bb3b7ea9c4a9
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9439,7 +9454,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+>>>>>>> a081d175f47fae44be01bd553f73bb3b7ea9c4a9
       }
     }
   }

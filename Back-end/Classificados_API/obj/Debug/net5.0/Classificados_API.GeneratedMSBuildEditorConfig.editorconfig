@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Classificados_API
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\48423428893.INFOSCS\Desktop\RepoClassificados\Back-end\Classificados_API\
+=======
+build_property.ProjectDir = C:\Users\47460654892.INFOSCS\Documents\Projetos\Projeto Interno\RepoClassificados\Back-end\Classificados_API\
+>>>>>>> a081d175f47fae44be01bd553f73bb3b7ea9c4a9

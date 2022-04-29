@@ -21,7 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <Folder Include="StaticFile\Imagem\" />
+=======
+    <Folder Include="StaticFiles\Images\" />
+>>>>>>> a081d175f47fae44be01bd553f73bb3b7ea9c4a9
   </ItemGroup>
 
 </Project>
